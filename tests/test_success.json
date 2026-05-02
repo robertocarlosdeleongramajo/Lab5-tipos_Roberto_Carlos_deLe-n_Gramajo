@@ -1,0 +1,27 @@
+[
+  {
+    "type": "declaration",
+    "name": "puntaje_base",
+    "datatype": "int",
+    "line": 1
+  },
+  {
+    "type": "declaration",
+    "name": "bono",
+    "datatype": "int",
+    "line": 2
+  },
+  {
+    "type": "assignment",
+    "target": "puntaje_base",
+    "value_type": "int",
+    "line": 3
+  },
+  {
+    "type": "operation",
+    "left_type": "int",
+    "operator": "+",
+    "right_type": "int",
+    "line": 4
+  }
+]

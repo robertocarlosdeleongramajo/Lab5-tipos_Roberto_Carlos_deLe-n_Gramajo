@@ -1,0 +1,27 @@
+[
+  {
+    "type": "declaration",
+    "name": "contador",
+    "datatype": "int",
+    "line": 1
+  },
+  {
+    "type": "assignment",
+    "target": "contador",
+    "value_type": "string",
+    "line": 2
+  },
+  {
+    "type": "assignment",
+    "target": "valor_desconocido",
+    "value_type": "int",
+    "line": 3
+  },
+  {
+    "type": "operation",
+    "left_type": "int",
+    "operator": "+",
+    "right_type": "bool",
+    "line": 4
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "type": "declaration",
+    "name": "x",
+    "datatype": "int",
+    "line": 1
+  },
+  {
+    "type": "scope_start",
+    "line": 2
+  },
+  {
+    "type": "declaration",
+    "name": "x",
+    "datatype": "float",
+    "line": 3
+  },
+  {
+    "type": "assignment",
+    "target": "x",
+    "value_type": "float",
+    "line": 4
+  },
+  {
+    "type": "scope_end",
+    "line": 5
+  },
+  {
+    "type": "assignment",
+    "target": "x",
+    "value_type": "int",
+    "line": 6
+  }
+]
