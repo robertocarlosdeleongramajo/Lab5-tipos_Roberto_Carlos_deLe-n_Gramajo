@@ -1,27 +1,37 @@
-[
-  {
-    "type": "declaration",
-    "name": "puntaje_base",
-    "datatype": "int",
-    "line": 1
-  },
-  {
-    "type": "declaration",
-    "name": "bono",
-    "datatype": "int",
-    "line": 2
-  },
-  {
-    "type": "assignment",
-    "target": "puntaje_base",
-    "value_type": "int",
-    "line": 3
-  },
-  {
-    "type": "operation",
-    "left_type": "int",
-    "operator": "+",
-    "right_type": "int",
-    "line": 4
-  }
-]
+{
+  "programa": [
+    {
+      "type": "declaration",
+      "name": "posicion",
+      "datatype": "int",
+      "line": 1
+    },
+    {
+      "type": "if",
+      "condition_type": "bool",
+      "line": 3,
+      "block": [
+        {
+          "type": "declaration",
+          "name": "posicion",
+          "datatype": "float",
+          "line": 4
+        },
+        {
+          "type": "assignment",
+          "target": "posicion",
+          "value_type": "float",
+          "op": "+",
+          "line": 6
+        }
+      ]
+    },
+    {
+      "type": "assignment",
+      "target": "posicion",
+      "value_type": "int",
+      "op": "+",
+      "line": 9
+    }
+  ]
+}

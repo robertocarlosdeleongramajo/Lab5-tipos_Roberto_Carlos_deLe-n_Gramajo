@@ -1,0 +1,16 @@
+// L-1: Configuración inicial
+int stock_actual = 50;
+bool tienda_abierta = true;
+
+// L-4: Intento de operación inválida (ERROR 1)
+// No se puede asignar un booleano a un entero (Type Mismatch)
+stock_actual = tienda_abierta; 
+
+if (tienda_abierta) {
+    // L-7: Variable local al bloque IF
+    float descuento = 0.15;
+}
+
+// L-10: Intento de usar variable fuera de su ámbito (ERROR 2)
+// 'descuento' dejó de existir al salir del IF
+float precio_final = descuento;

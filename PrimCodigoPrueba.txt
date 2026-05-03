@@ -1,0 +1,14 @@
+// L-1: Coordenada global
+int posicion = 100;
+
+if (true) {
+    // L-4: Shadowing - Esta 'posicion' es diferente a la de arriba
+    // Solo existe dentro de este bloque IF
+    float posicion = 55.5; 
+    
+    // L-6: Se usa la local (float), no la global (int)
+    posicion = posicion + 1.5;
+}
+
+// L-9: Aquí volvemos a usar la 'posicion' global (int)
+posicion = posicion + 10;

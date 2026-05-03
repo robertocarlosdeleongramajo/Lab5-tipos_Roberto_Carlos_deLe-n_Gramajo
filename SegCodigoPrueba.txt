@@ -1,0 +1,27 @@
+// L-1: Declaración de arreglos (vectores y matrices)
+int vector_datos[10];      // dim: 1
+float matriz_total[5][5];  // dim: 2
+
+// L-3: Variable de control simple
+int limite;
+limite = 10;               // L-4: Asignación inicial
+
+// L-5: Bloque de decisión principal
+if (true) {                // Espera condition_type: bool
+    
+    // L-6: Variable local al bloque IF
+    float temp_calculo;
+    temp_calculo = 0.0 + 1.5; // L-7: Uso de operador '+'
+    
+    // L-8: Operación sobre la matriz global
+    matriz_total = matriz_total * 2.0; 
+
+    // L-9: Bucle anidado (dentro del IF)
+    while (true) {         
+        // L-10: Decremento de la variable global
+        limite = limite - 1; 
+    }
+}
+
+// L-12: Estado final del sistema
+bool sistema_activo;

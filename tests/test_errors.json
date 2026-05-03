@@ -1,27 +1,43 @@
-[
-  {
-    "type": "declaration",
-    "name": "contador",
-    "datatype": "int",
-    "line": 1
-  },
-  {
-    "type": "assignment",
-    "target": "contador",
-    "value_type": "string",
-    "line": 2
-  },
-  {
-    "type": "assignment",
-    "target": "valor_desconocido",
-    "value_type": "int",
-    "line": 3
-  },
-  {
-    "type": "operation",
-    "left_type": "int",
-    "operator": "+",
-    "right_type": "bool",
-    "line": 4
-  }
-]
+{
+  "programa": [
+    {
+      "type": "declaration",
+      "name": "stock_actual",
+      "datatype": "int",
+      "line": 1
+    },
+    {
+      "type": "declaration",
+      "name": "tienda_abierta",
+      "datatype": "bool",
+      "line": 2
+    },
+    {
+      "type": "assignment",
+      "target": "stock_actual",
+      "value_type": "bool",
+      "op": "=",
+      "line": 4
+    },
+    {
+      "type": "if",
+      "condition_type": "bool",
+      "line": 6,
+      "block": [
+        {
+          "type": "declaration",
+          "name": "descuento",
+          "datatype": "float",
+          "line": 7
+        }
+      ]
+    },
+    {
+      "type": "assignment",
+      "target": "precio_final",
+      "value_type": "float",
+      "op": "=",
+      "line": 10
+    }
+  ]
+}

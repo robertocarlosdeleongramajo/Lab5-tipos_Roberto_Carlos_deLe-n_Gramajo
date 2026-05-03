@@ -1,34 +1,73 @@
-[
-  {
-    "type": "declaration",
-    "name": "x",
-    "datatype": "int",
-    "line": 1
-  },
-  {
-    "type": "scope_start",
-    "line": 2
-  },
-  {
-    "type": "declaration",
-    "name": "x",
-    "datatype": "float",
-    "line": 3
-  },
-  {
-    "type": "assignment",
-    "target": "x",
-    "value_type": "float",
-    "line": 4
-  },
-  {
-    "type": "scope_end",
-    "line": 5
-  },
-  {
-    "type": "assignment",
-    "target": "x",
-    "value_type": "int",
-    "line": 6
-  }
-]
+{
+  "programa": [
+    {
+      "type": "declaration",
+      "name": "vector_datos",
+      "datatype": "int",
+      "dim": 1,
+      "line": 1
+    },
+    {
+      "type": "declaration",
+      "name": "matriz_total",
+      "datatype": "float",
+      "dim": 2,
+      "line": 2
+    },
+    { "type": "declaration", "name": "limite", "datatype": "int", "line": 3 },
+    {
+      "type": "assignment",
+      "target": "limite",
+      "value_type": "int",
+      "op": "=",
+      "line": 4
+    },
+    {
+      "type": "if",
+      "condition_type": "bool",
+      "line": 5,
+      "block": [
+        {
+          "type": "declaration",
+          "name": "temp_calculo",
+          "datatype": "float",
+          "line": 6
+        },
+        {
+          "type": "assignment",
+          "target": "temp_calculo",
+          "value_type": "float",
+          "op": "+",
+          "line": 7
+        },
+        {
+          "type": "assignment",
+          "target": "matriz_total",
+          "value_type": "float",
+          "op": "*",
+          "line": 8
+        },
+        {
+          "type": "while",
+          "condition_type": "bool",
+          "line": 9,
+          "block": [
+            {
+              "type": "assignment",
+              "target": "limite",
+              "value_type": "int",
+              "op": "-",
+              "line": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "declaration",
+      "name": "sistema_activo",
+      "datatype": "bool",
+      "line": 12
+    }
+  ]
+}
